@@ -1,0 +1,8 @@
+.hero-main {
+    min-height: calc(100vh - 4rem);
+    background: url('../../images/hotel-hero.jpg') left/cover no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,39 @@
+.nav-container {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    padding: .5rem 1rem 0;
+    background-color: rgba(0,0,0,.5);
+
+
+    a{
+        color: white;
+    }
+
+    .logo-container {
+        text-align: center;
+        height: 100%; 
+        width: 70px;
+        text-transform: uppercase;
+    }
+
+    .options {
+        display: flex;
+        justify-content: flex-end;
+        text-transform: uppercase;
+
+        .option {
+            padding: .75rem;
+            cursor: pointer;
+
+            &:hover {
+                background: rgba(0,0,0,.8);
+                border: white 1px;
+                border-radius: 10%;
+            }
+            
+        }
+    }
+}

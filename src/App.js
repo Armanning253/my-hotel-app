@@ -1,23 +1,23 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+
+import Homepage from './pages/home-page/homepage';
+import Navbar from './components/navbar/navbar.component';
+
 import './App.css';
 
 function App() {
+
+  const hotel = "Hotel Romano"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar hotel={hotel} />
+
+      <switch>
+        <Homepage hotel={hotel} />
+      </switch>
+
     </div>
   );
 }
