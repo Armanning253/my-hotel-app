@@ -1,0 +1,31 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    &-image {
+        width: 100%;
+        height: 95%;
+        background-size: cover;
+        background-position:center;
+       
+    }
+
+    &-info {
+        color: white;
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: .3rem;
+        bottom: 5px;
+        align-items: center;
+
+        background-color: rgba(245, 222, 179, 0.25);
+
+        span {
+            
+        }
+    }
+}

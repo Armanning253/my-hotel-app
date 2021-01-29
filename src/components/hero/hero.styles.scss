@@ -1,8 +1,17 @@
-.hero-main {
+.hero {
     min-height: calc(100vh - 4rem);
     background: url('../../images/hotel-hero.jpg') left/cover no-repeat;
 
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+.hero-room {
+    min-height: 60vh;
+    background: url(../../images/penthouse.jpg) left/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }

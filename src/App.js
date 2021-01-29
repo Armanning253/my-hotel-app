@@ -9,16 +9,14 @@ import './App.css';
 
 function App() {
 
-  const hotel = "Hotel Romano"
-
   return (
     <div className="App">
-      <Navbar hotel={hotel} />
+      <Navbar />
 
-      <switch>
-        <Homepage hotel={hotel} />
-        <Roomspage />
-      </switch>
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route path="/rooms" component={Roomspage} />
+      </Switch>
 
     </div>
   );
